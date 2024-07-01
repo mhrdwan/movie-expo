@@ -15,6 +15,7 @@ export default function App() {
 
   const handleLogin = () => {
     // Tambahkan logika autentikasi di sini jika diperlukan
+    
     Alert.alert(
       "Login Berhasil",
       "Anda akan diarahkan ke Dashboard.",
