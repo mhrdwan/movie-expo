@@ -15,7 +15,7 @@ export default function App() {
 
   const handleLogin = () => {
     // Tambahkan logika autentikasi di sini jika diperlukan
-    
+    return (router.replace("(tabs)"))
     Alert.alert(
       "Login Berhasil",
       "Anda akan diarahkan ke Dashboard.",
