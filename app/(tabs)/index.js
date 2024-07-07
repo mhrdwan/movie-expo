@@ -46,7 +46,19 @@ export default function Home() {
       <View className="bg-primary pl-4 pr-4">
         <View className="mt-10 flex flex-row justify-between items-center">
           <Text className="text-white font-bold text-[20px]">Untuk Kamu</Text>
-          <Text className="text-mainBlue">See All</Text>
+          <Text
+            onPress={() =>
+              router.push({
+                pathname: "seeall/SeeAll",
+                params: {
+                  judul: "Untuk Kamu",
+                },
+              })
+            }
+            className="text-mainBlue"
+          >
+            See All
+          </Text>
         </View>
         <ScrollView
           horizontal={true}
@@ -77,7 +89,19 @@ export default function Home() {
         </ScrollView>
         <View className="mt-10 flex flex-row justify-between items-center">
           <Text className="text-white font-bold text-[20px]">TV</Text>
-          <Text className="text-mainBlue">See All</Text>
+          <Text
+            onPress={() =>
+              router.push({
+                pathname: "seeall/SeeAll",
+                params: {
+                  judul: "TV",
+                },
+              })
+            }
+            className="text-mainBlue"
+          >
+            See All
+          </Text>
         </View>
         <ScrollView
           horizontal={true}
@@ -96,7 +120,14 @@ export default function Home() {
         </ScrollView>
         <View className="mt-10 flex flex-row justify-between items-center">
           <Text className="text-white font-bold text-[20px]">Film Popular</Text>
-          <Text className="text-mainBlue">See All</Text>
+          <Text  onPress={() =>
+              router.push({
+                pathname: "seeall/SeeAll",
+                params: {
+                  judul: "Film Popular",
+                },
+              })
+            } className="text-mainBlue">See All</Text>
         </View>
         <ScrollView
           horizontal={true}

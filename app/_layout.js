@@ -31,6 +31,18 @@ export default function RootLayout() {
           },
         })}
       />
+      <Stack.Screen
+        name="seeall/SeeAll"
+        options={({ route }) => ({
+          title: route.params?.judul || "Detail",
+          headerBackTitle: "back",
+          headerShown: true,
+          headerTintColor: "#090e17",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        })}
+      />
       {/* <Stack.Screen name="Tabs" component={TabLayout} /> */}
       {/* <Stack.Screen
           name="HomeDetail"

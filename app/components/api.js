@@ -1,7 +1,7 @@
 // api.js
 
 export const fetchTopRatedMovies = async () => {
-  const url = 'https://api.themoviedb.org/3/movie/top_rated?language=id-ID&page=1';
+  const url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
   const options = {
     method: 'GET',
     headers: {
@@ -22,7 +22,7 @@ export const fetchTopRatedMovies = async () => {
 
 
 export const fetchPopularMovies = async () => {
-    const url = 'https://api.themoviedb.org/3/movie/popular?language=id-ID&page=1';
+    const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
     const options = {
       method: 'GET',
       headers: {
